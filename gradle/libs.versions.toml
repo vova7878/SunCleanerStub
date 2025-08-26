@@ -1,11 +1,10 @@
 [versions]
-agp = "8.8.1"
-androidmisc = "v0.0.5"
+agp = "8.12.1"
+raung = "v0.0.1"
 
 [libraries]
-androidmisc = { module = "com.github.vova7878:AndroidMisc", version.ref = "androidmisc" }
 
 [plugins]
+raung = { id = "com.github.vova7878.RaungPlugin", version.ref = "raung" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 maven-publish = { id = 'maven-publish' }
-

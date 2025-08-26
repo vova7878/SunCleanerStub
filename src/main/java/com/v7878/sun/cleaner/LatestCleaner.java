@@ -6,7 +6,7 @@ import java.lang.ref.Cleaner;
 
 @SuppressLint("NewApi")
 final class LatestCleaner extends SunCleaner {
-    public static final SunCleaner INSTANCE = new LatestCleaner();
+    public static final LatestCleaner INSTANCE = new LatestCleaner();
     private final Cleaner cleaner;
 
     private LatestCleaner() {

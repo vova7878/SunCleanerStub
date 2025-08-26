@@ -1,11 +1,12 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.maven.publish)
+    alias(libs.plugins.raung)
 }
 
 android {
     namespace 'com.v7878.sun.cleaner'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         minSdk 26
@@ -24,7 +25,6 @@ android {
 }
 
 dependencies {
-    implementation libs.androidmisc
 }
 
 publishing {

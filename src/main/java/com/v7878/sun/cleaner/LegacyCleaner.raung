@@ -1,0 +1,33 @@
+.version 52
+.class final com/v7878/sun/cleaner/LegacyCleaner
+.super com/v7878/sun/cleaner/SunCleaner
+.auto frames
+
+.field public static final INSTANCE Lcom/v7878/sun/cleaner/LegacyCleaner;
+
+.method static <clinit>()V
+    new com/v7878/sun/cleaner/LegacyCleaner
+    dup
+    invokespecial com/v7878/sun/cleaner/LegacyCleaner <init> ()V
+    putstatic com/v7878/sun/cleaner/LegacyCleaner INSTANCE Lcom/v7878/sun/cleaner/LegacyCleaner;
+    return
+.end method
+
+.method public <init>()V
+    aload 0
+    invokespecial com/v7878/sun/cleaner/SunCleaner <init> ()V
+    return
+.end method
+
+.method public register(Ljava/lang/Object;Ljava/lang/Runnable;)Lcom/v7878/sun/cleaner/SunCleaner$Cleanable;
+    aload 1
+    aload 2
+    invokestatic sun/misc/Cleaner register (Ljava/lang/Object;Ljava/lang/Runnable;)Lsun/misc/Cleaner;
+    invokedynamic clean (Lsun/misc/Cleaner;)Lcom/v7878/sun/cleaner/SunCleaner$Cleanable;
+        .handle invoke-static java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+        .arg 0 .methodtype ()V
+        .arg 1 .handle invoke-virtual sun/misc/Cleaner clean ()V
+        .arg 2 .methodtype ()V
+    .end invokedynamic
+    areturn
+.end method
