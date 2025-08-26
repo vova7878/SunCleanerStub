@@ -22,7 +22,7 @@
 .method public register(Ljava/lang/Object;Ljava/lang/Runnable;)Lcom/v7878/sun/cleaner/SunCleaner$Cleanable;
     aload 1
     aload 2
-    invokestatic sun/misc/Cleaner register (Ljava/lang/Object;Ljava/lang/Runnable;)Lsun/misc/Cleaner;
+    invokestatic sun/misc/Cleaner create (Ljava/lang/Object;Ljava/lang/Runnable;)Lsun/misc/Cleaner;
     invokedynamic clean (Lsun/misc/Cleaner;)Lcom/v7878/sun/cleaner/SunCleaner$Cleanable;
         .handle invoke-static java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
         .arg 0 .methodtype ()V
