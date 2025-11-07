@@ -1,10 +1,10 @@
 [versions]
 agp = "8.13.0"
-raung = "v0.0.3"
+raung = "v1.0.0"
 
 [libraries]
 
 [plugins]
-raung = { id = "com.github.vova7878.RaungPlugin", version.ref = "raung" }
+raung = { id = "io.github.vova7878.RaungPlugin", version.ref = "raung" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 maven-publish = { id = 'maven-publish' }
