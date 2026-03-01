@@ -1,7 +1,7 @@
 [versions]
 agp = "9.0.1"
 maven-publish = "0.36.0"
-raung = "v1.0.0"
+raung = "v1.0.1"
 
 [libraries]
 
